@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9192BC8C1B0BDA2200082D46 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9192BC8B1B0BDA2200082D46 /* CoreDataStack.swift */; };
+		91AB56A91B0EF5DF0084AADF /* Dog Walk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91AB56A71B0EF5DF0084AADF /* Dog Walk.xcdatamodeld */; };
+		91AB56AB1B0EF86A0084AADF /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AB56AA1B0EF86A0084AADF /* Walk.swift */; };
+		91AB56AD1B0EF86B0084AADF /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AB56AC1B0EF86B0084AADF /* Dog.swift */; };
 		FE9B988B196F812900661F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B988A196F812900661F7D /* AppDelegate.swift */; };
 		FE9B988D196F812900661F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B988C196F812900661F7D /* ViewController.swift */; };
 		FE9B9890196F812900661F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9B988E196F812900661F7D /* Main.storyboard */; };
@@ -25,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9192BC8B1B0BDA2200082D46 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		91AB56A81B0EF5DF0084AADF /* Dog Walk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Dog Walk.xcdatamodel"; sourceTree = "<group>"; };
+		91AB56AA1B0EF86A0084AADF /* Walk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Walk.swift; path = "Dog Walk/Walk.swift"; sourceTree = "<group>"; };
+		91AB56AC1B0EF86B0084AADF /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dog.swift; path = "Dog Walk/Dog.swift"; sourceTree = "<group>"; };
 		FE9B9885196F812900661F7D /* Dog Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog Walk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9B9889196F812900661F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE9B988A196F812900661F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,8 @@
 		FE9B987C196F812900661F7D = {
 			isa = PBXGroup;
 			children = (
+				91AB56AC1B0EF86B0084AADF /* Dog.swift */,
+				91AB56AA1B0EF86A0084AADF /* Walk.swift */,
 				FE9B9887196F812900661F7D /* Dog Walk */,
 				FE9B989A196F812900661F7D /* Dog WalkTests */,
 				FE9B9886196F812900661F7D /* Products */,
@@ -75,6 +85,8 @@
 		FE9B9887196F812900661F7D /* Dog Walk */ = {
 			isa = PBXGroup;
 			children = (
+				9192BC8B1B0BDA2200082D46 /* CoreDataStack.swift */,
+				91AB56A71B0EF5DF0084AADF /* Dog Walk.xcdatamodeld */,
 				FE9B988A196F812900661F7D /* AppDelegate.swift */,
 				FE9B988C196F812900661F7D /* ViewController.swift */,
 				FE9B988E196F812900661F7D /* Main.storyboard */,
@@ -209,6 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE9B988D196F812900661F7D /* ViewController.swift in Sources */,
+				9192BC8C1B0BDA2200082D46 /* CoreDataStack.swift in Sources */,
+				91AB56AD1B0EF86B0084AADF /* Dog.swift in Sources */,
+				91AB56AB1B0EF86A0084AADF /* Walk.swift in Sources */,
+				91AB56A91B0EF5DF0084AADF /* Dog Walk.xcdatamodeld in Sources */,
 				FE9B988B196F812900661F7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +413,7 @@
 				FE9B98A3196F812900661F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE9B98A4196F812900661F7D /* Build configuration list for PBXNativeTarget "Dog WalkTests" */ = {
 			isa = XCConfigurationList;
@@ -405,8 +422,22 @@
 				FE9B98A6196F812900661F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		91AB56A71B0EF5DF0084AADF /* Dog Walk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				91AB56A81B0EF5DF0084AADF /* Dog Walk.xcdatamodel */,
+			);
+			currentVersion = 91AB56A81B0EF5DF0084AADF /* Dog Walk.xcdatamodel */;
+			path = "Dog Walk.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE9B987D196F812900661F7D /* Project object */;
 }
