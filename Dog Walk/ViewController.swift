@@ -56,6 +56,24 @@ class ViewController: UIViewController, UITableViewDataSource {
     titleForHeaderInSection section: Int) -> String? {
       return "List of Walks";
   }
+
+  func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    return true
+  }
+
+  func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    if editingStyle == UITableViewCellEditingStyle.Delete {
+      let walkToRemove = currentDog.walks[indexPath.row] as! Walk
+      managedContext.deleteObject(walkToRemove)
+      var error: NSError?
+
+      if !managedContext.save(&error) {
+        println("Could not save: \(error)")
+      }
+
+      tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+    }
+  }
   
   func tableView(tableView: UITableView,
     cellForRowAtIndexPath
